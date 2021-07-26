@@ -1,0 +1,20 @@
+<script>
+    var id = "lyw5415";
+    var pw = "abcd1234";
+
+    var user_id = prompt("현재 아이디를 입력 해주세요","0");
+    var user_pw = prompt("현재 비밀번호를 입력해주세요.","0");
+
+    if(id == user_id){
+        if(pw == user_pw){
+            document.write(user_id+"님환영합니다.");
+        }else{
+            alert("비밀번호가 일치하지 않는 군요.");
+            location.reload();
+        }
+    }else{
+        alert("아이디가 일치하지 않습니다.");
+        location.reload();
+    }
+
+</script>

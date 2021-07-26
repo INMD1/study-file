@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $(window).on("scroll", function() {
+                var sc_top = $(this).scrollTop();
+                var sc_left = $(this).scrollLeft();
+
+                $(".top").text(sc_top);
+                $(".Left").text(sc_left);
+            })
+        });
+    </script>
+    <style>
+        body {
+            height: 10000px;
+            width: 5000px;
+        }
+        #wrap {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>scrollTop: <span class="top">0</span>px</p>
+        <p>scrollLeft: <span class="Left">0</span>px</p>
+    </div>
+</body>

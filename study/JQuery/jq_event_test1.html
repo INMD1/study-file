@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            var beforeMenu = null
+
+            $(".gnb a").on( "mouseover", function() {
+                if(beforeMenu) beforeMenu.css({backgound:"none"});
+                $(this).css({"background-color":"#0ff"});
+                beforeMenu = $(this);
+            });
+
+            $(".gnb a").on("mouseout" , function() {
+                if(beforeMenu) beforeMenu.css({backgound:"none"});
+                $(this).css({"background-color":""});
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul class="gnb">
+        <button><a href="#">menu1</a></button>
+        <button><a href="#">menu2</a></button>
+        <button><a href="#">menu3</a></button>
+        <button><a href="#">menu4</a></button>
+    </ul>
+</body>

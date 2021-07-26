@@ -1,0 +1,21 @@
+<script>
+    var rightid = "korea";
+    var rightpw = "1234";
+    function login(id, pw){
+        if(id == rightid){
+            if(pw == rightpw){
+                document.write(id+"님 방문을 환영합니다.")
+            }else{
+            alert("무언가 잘못이 되었서요 비밀")
+        }
+        }else{
+            alert("무언가 잘못이 되었서요 아이디")
+        }
+
+    }
+    var usedid = prompt("아이디를 입력해주세요","");
+    var usedpw = prompt("비밀번호를 입력해주세요","");
+
+    login(usedid,usedpw)
+
+</script>        document.write(id+"님 방문을 환영합니다.")

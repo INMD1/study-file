@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".menuWrap_1 a").on("click", function(e) {
+                e.preventDefault();
+
+                $(".menuWrap_1 a").css({
+                    "background-color" : "#fff"
+                });
+
+                $(this).css({
+                    "background-color" : "#ff0"
+                });
+
+                $(".menuWrap_2 a").on("click", function(e) {
+                e.preventDefault();
+                });
+
+                var idx = $(".menuWrap_2 a").index(this);
+
+                $(".menuWrap_2 a").eq(idx).css({
+                    "background-color" : "#0ff"
+                });
+
+                $(".idxNum").text(idx)
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>$(this)</h2>
+    <ul class="menuWrap_1">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+    </ul>
+    <h2>index()</h2>
+    <ul class="menuWrap_2">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+    </ul>
+    <p class="idxNum"></p>
+</body>

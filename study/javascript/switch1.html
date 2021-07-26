@@ -1,0 +1,16 @@
+<script>
+    var site = prompt("네이버, 다음, 구글중 알고싶은 주소가 있나요?");
+    var url;
+
+    switch(site){
+        case "구글":url ="www.google.com";
+        break;
+        case "다음":url ="www.doum.com";
+        break;
+        case "네이버":url ="www.naver.com"
+        break;
+        default: alert("이거 뭐에요?");
+    }
+
+    document.write(url)
+</script>

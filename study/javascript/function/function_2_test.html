@@ -1,0 +1,21 @@
+<head>
+<script>
+    var color = ["white","yellow","aqua","people"];
+    
+    
+    var i = 0;
+    function changecolor(){
+        i++;
+        if(i>color.length){
+            i=0;
+        }
+        
+        var bodyTag = document.getElementById("theBody");
+        bodyTag.style.backgroundColor = color[i];
+    } 
+</script>
+</head>
+<body id="theBody">
+    <button onclick="changecolor();">색상바꾸기</button>
+    
+</body>
