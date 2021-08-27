@@ -1,8 +1,17 @@
-count = int(input())
- 
-for i  in range(count):
-    result = 1
-    u = int(input())
-    for d in range(1, u + 1):
-        result = result * d
-    print(result)
+a,b,c = input('').split()
+a = int(a)
+b = int(b)
+if c == '+':
+    print(a+b)
+elif c == '-':
+    print(a-b)
+elif c == '*':
+    print(a*b)
+elif c == '/':
+    print(round(a/b, 3))
+elif c == '//':
+    print(round(a//b, 3))
+elif c == '%':
+    print(round(a%b, 3))
+else:
+    print("Mission Impossible")
