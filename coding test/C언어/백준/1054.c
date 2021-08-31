@@ -4,7 +4,7 @@ int main() {
 	int a, b, c;
 	scanf("%d", &a);
 	for (int i = 0; i < a; i++) {
-		scanf("%d %d", &b, &c);
+		scanf("%d %d", &c, &b);
 		for (int  i = 1; i <= b; i++)
 		{
 			for (int d = 1; d <= c; d++)
@@ -21,21 +21,3 @@ int main() {
 
 	}
 }
-
-/* reslt 
-2
-2 3
-***
-***
-4 4
-****
-*  *
-*  *
-****
-5 5
-*****
-*   *
-*   *
-*   *
-*****
-*/
