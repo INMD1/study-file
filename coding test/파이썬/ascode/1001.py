@@ -3,12 +3,12 @@ a = int(input(''))
 while(a):
     b = input('')
     if b.lower().count('char') >= 2:
-        if b.replace('char','') == '':
+        insensitive_hippo = re.compile(re.escape('char'), re.IGNORECASE)
+        if insensitive_hippo.sub('', b) == '': 
             print("I Hate CharChar!")
         else :
-             insensitive_hippo = re.compile(re.escape('char'), re.IGNORECASE)
-             print(insensitive_hippo.sub('', b))
+             print(insensitive_hippo.sub('', b)
+)
     else:
         print(b)
     a = a - 1
- 
