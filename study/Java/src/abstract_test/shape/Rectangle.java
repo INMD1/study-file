@@ -14,8 +14,6 @@ public class Rectangle extends shape{
         return (Lenght*width);
     }
 
-
-
     public static void main(String[] args){
         Rectangle myRect = new Rectangle("MY R", 5,3);
         System.out.println("사각형의 넓이 : " + myRect.getArea());
