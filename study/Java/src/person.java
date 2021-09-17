@@ -15,11 +15,11 @@ public class person {
         System.out.println("이름: " + js.getLastname());
 
         System.out.print("이름 숫자: " + js.getData());
+
     }
 }
 class name{
     String lastname, firstname;
-    int data;
     public name(String last, String first){
         this.lastname =  last;
         this.firstname = first;
