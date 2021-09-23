@@ -16,20 +16,25 @@ int main() {
             v = (v * 10) + (c % 10);
             c = c / 10;
         }
-        if (v + o < 100) { printf("%d\n", v + o); break; }
-        else { arr = v + o; }
-        while (arr)
-        {
-            if (arr % 10 == 0){
-                result = result + (arr % 10);
-                arr /= 10;
+        
+        if (v + o < 100) { 
+            printf("%d\n", v + o); 
+        }else { 
+            arr = v + o; 
+
+            while (arr)
+            {
+                if (arr % 10 == 0) {
+                    result = result + (arr % 10);
+                    arr /= 10;
+                }
+                else {
+                    result = result * (arr % 10);
+                    arr /= 10;
+                }
             }
-            else {
-                result = result * (arr % 10);
-                arr /= 10;
-            } 
+            printf("%llu\n", result);
         }
-        printf("%llu\n", result);
-        result = 1, v = 0, o = 0;
+        result = 1, v = 0, o = 0, arr = 0;
     }
 }
