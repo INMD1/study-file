@@ -8,7 +8,7 @@
 
 ### c
 
-### python(토치 때문에 다시 보는중)
+### python
  + pytorch
 
 ### js
