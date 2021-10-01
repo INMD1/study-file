@@ -13,6 +13,3 @@
 
 ### js
  + node.js
-### java (매우매우 기초만 마스터)
-
-### Kotlin
