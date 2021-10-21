@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 
 //각각해주기 귀찮으니 전역변수 설정
 int ar[501][501], result[1003];
