@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+include <stdio.h>
+>>>>>>> 07d5c1aa78ed7c372f406d936e4adb844ae450a4
 
 int a, b;
 
