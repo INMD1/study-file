@@ -1,4 +1,4 @@
-var sd = "1zerotwozero3"
+var sd = "onezero2four9two21four7serven"
 console.log(solution(sd));
 
 function solution(s) { 
